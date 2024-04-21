@@ -10,7 +10,7 @@ for(let divFly of flies) {
     fly.style.top = utils.randomNum(0, window.innerHeight - 100) + 'px';
     fly.style.transform = `scaleX(${utils.randomNorm()})`;
     
-    fly.autoMove = setInterval(() => move(fly), utils.randomNum(2500, 3000));
+    fly.autoMove = setInterval(() => move(fly), 3000);
 
     fly.addEventListener("click", flyClickHandler); 
 }
