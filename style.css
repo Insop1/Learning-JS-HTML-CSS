@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(160, 117, 124);  
+    margin: 0px;
+    align-content: center;
+
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.title {
+    color: rgb(193, 198, 225);
+    margin: 0;
+    font-size: xx-large;
+}
+
+header {
+    display: flex;
+    height: auto;
+    width: auto;
+    background-color: rgb(80, 60, 63);
+
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    border: 5px solid rgb(111, 87, 90);
+    background-color: rgb(158, 117, 121);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.headerLinks, .headerThings, .title, button {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    position: relative;
+
+    min-width: fit-content;
+}
+
+.headerLinks a, .headerThings a, button {
+    color: rgb(193, 198, 225);
+    margin: 5px;
+    padding: 5px 10px;
+    text-decoration-line: none;
+
+    transition: filter 0.2s;
+    align-content: center;
+    min-width: fit-content;
+}
+
+.headerLinks a:hover, .headerThings a:hover, button:hover{
+    filter: brightness(120%);
+}
+
+.headerLinks {
+    background-color: rgb(68, 52, 54);
+    margin-right: auto;
+}
+
+.headerLinks a {
+    border: 5px solid rgb(47, 37, 38); 
+    background-color: rgb(57, 44, 46);
+}
+
+
+.headerThings {
+    margin-left: auto;
+    background-color: rgb(101, 75, 79);;
+}
+
+.headerThings a {
+    border: 5px solid rgb(69, 54, 56);
+    background-color: rgb(80, 61, 63);
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column-reverse;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .headerLinks, .headerThings {
+        margin: auto;
+    }
+}
